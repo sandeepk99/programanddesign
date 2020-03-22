@@ -1,4 +1,4 @@
-target/
+/target/**
 *.class
 *.jar
 *.war
@@ -7,3 +7,6 @@ target/
 *.iml
 .idea/
 .eclipse
+.classpath
+.project
+.settings/
