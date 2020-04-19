@@ -1,4 +1,4 @@
-package com.sandeep.general;
+package com.program.general;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
