@@ -28,4 +28,34 @@ public class TreeProgramTest {
         treeUtility.print();
     }
 
+    @Test
+    public void test_findHeight_isBalanced_False() {
+        treeUtility = new TreeUtility();
+        treeUtility.add(5);
+        treeUtility.add(3);
+        treeUtility.add(2);
+        treeUtility.add(4);
+        treeUtility.add(7);
+        treeUtility.add(6);
+        treeUtility.add(8);
+        treeUtility.add(11);
+        treeUtility.add(15);
+        Assertions.assertEquals(false, fh.isBalanced(treeUtility));
+
+    }
+
+    @Test
+    public void test_findHeight_isBalanced_True() {
+        treeUtility = new TreeUtility();
+        treeUtility.add(5);
+        treeUtility.add(3);
+        treeUtility.add(2);
+        treeUtility.add(4);
+        treeUtility.add(7);
+        treeUtility.add(6);
+        treeUtility.add(8);
+        Assertions.assertEquals(true, fh.isBalanced(treeUtility));
+
+    }
+
 }
