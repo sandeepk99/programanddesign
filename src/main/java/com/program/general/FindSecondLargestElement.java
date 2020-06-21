@@ -1,4 +1,4 @@
-package com.sandeep.general;
+package com.program.general;
 
 public class FindSecondLargestElement {
 

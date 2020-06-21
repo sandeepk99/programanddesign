@@ -1,4 +1,4 @@
-package com.program.algorithm;
+package com.program.algorithmanddatastructure;
 
 //@formatter:on
 

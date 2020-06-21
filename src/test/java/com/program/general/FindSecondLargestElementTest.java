@@ -3,8 +3,6 @@ package com.program.general;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.sandeep.general.FindSecondLargestElement;
-
 
 public class FindSecondLargestElementTest {
 	

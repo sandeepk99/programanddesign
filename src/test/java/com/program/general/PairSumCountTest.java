@@ -1,6 +1,5 @@
 package com.program.general;
 
-import com.sandeep.general.FindSecondLargestElement;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
