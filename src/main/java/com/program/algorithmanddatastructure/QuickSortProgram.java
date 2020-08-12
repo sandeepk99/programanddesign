@@ -38,22 +38,23 @@ public class QuickSortProgram {
         }
         return nums;
     }
-
-    private int partition(int[] nums, int start, int end) {
-
+    int partition(int [] nums, int start, int end){
+        int pIndx = start;
         int pivot = nums[end];
-        int partitionIndex = start;
-        for (int i = start; i < end; i++) {
-            if (nums[i] <= pivot) {
-                int temp = nums[i];
-                nums[i] = nums[partitionIndex];
-                nums[partitionIndex] = temp;
-                partitionIndex++;
+        for(int i=start;i<end;i++){
+            if(nums[i]<=pivot){
+                swap(nums,i,pIndx);
+                pIndx++;
             }
         }
-        int tempIndex = nums[end];
-        nums[end] = nums[partitionIndex];
-        nums[partitionIndex] = tempIndex;
-        return partitionIndex;
+        swap(nums,pIndx,end);
+        return pIndx;
     }
+
+    void swap(int [] aux , int first, int second){
+        int temp = aux[first];
+        aux[first]=aux[second];
+        aux[second]=temp;
+    }
+
 }

@@ -4,7 +4,10 @@ import jdk.nashorn.internal.runtime.regexp.joni.constants.OPCode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Lambda {
 
@@ -29,6 +32,8 @@ public class Lambda {
                 .filter(name -> "Andy".equalsIgnoreCase(name.getName()))
                 .findFirst()).orElse(Optional.empty());
     }
+
+
 
     static boolean getPersonName(List<Person> persons) {
         return getPerson(persons).isPresent();
