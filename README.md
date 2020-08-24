@@ -1,4 +1,4 @@
-## This project contains important concepts & questions on 
+## This project contains important program/concepts for codeing interview preparation
 - Design, programs of algorithm & Data structure , Mutithreading & Java 8 streams
   
  ## PROGRAMS
